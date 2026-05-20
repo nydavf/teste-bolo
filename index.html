@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos e Salgados | Feitos com Carinho e Sabor</title>
+    <meta name="description" content="Produzimos bolos, doces e salgados artesanais para festas, eventos e momentos especiais. Qualidade e sabor premium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-text">Bolos & Salgados</span>
+                <span class="logo-placeholder" style="font-size: 0.6rem; color: var(--text-light); margin-top: -2px;">[Substituir pela sua logo]</span>
+            </div>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Alternar tema"><i class="fas fa-moon"></i></button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1>Bolos e Salgados feitos com carinho e sabor</h1>
+                <p>Produzimos bolos, doces e salgados artesanais para festas, eventos e momentos especiais.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">Fazer Pedido</a>
+                    <a href="#produtos" class="btn btn-outline">Ver Cardápio</a>
+                    <a href="https://wa.me/5582991424574?text=Olá!%20Vim%20pelo%20site%20da%20Bolos%20e%20Salgados%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Falar no WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="assets/hero_cake.png" alt="Bolo Premium Elegante">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container sobre-container">
+            <div class="sobre-image fade-in">
+                <img src="assets/about_bakery.png" alt="Nossa Confeitaria">
+            </div>
+            <div class="sobre-content fade-in">
+                <h2>Nossa Essência</h2>
+                <p>A Bolos e Salgados trabalha com produtos artesanais preparados com dedicação, qualidade e muito sabor, oferecendo experiências especiais para festas, aniversários, eventos e encomendas personalizadas.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-star"></i></div>
+                        <span>Ingredientes de qualidade</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <span>Atendimento rápido</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <span>Produção artesanal</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-gift"></i></div>
+                        <span>Encomendas personalizadas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nossos Produtos</h2>
+                <p>O sabor que sua festa merece</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/hero_cake.png" alt="Bolo Personalizado">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolos Personalizados</h3>
+                        <p>Bolos exclusivos e decorados para transformar o seu evento em um momento inesquecível.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Bolos Personalizados">Fazer Pedido</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bolos de Aniversário">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolos de Aniversário</h3>
+                        <p>Clássicos e deliciosos, feitos para celebrar a vida com quem você mais ama.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Bolos de Aniversário">Fazer Pedido</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/product_sweets.png" alt="Doces Gourmet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Doces Gourmet & Docinhos</h3>
+                        <p>Brigadeiros, beijinhos e doces finos preparados com ingredientes premium.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Doces Gourmet e Docinhos">Fazer Pedido</button>
+                    </div>
+                </div>
+                 <!-- Product Card 4 -->
+                 <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="assets/product_snacks.png" alt="Salgados Artesanais">
+                    </div>
+                    <div class="product-info">
+                        <h3>Salgados Artesanais</h3>
+                        <p>Coxinhas, empadas e mini salgados. Crocantes por fora e deliciosos por dentro.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Salgados Artesanais">Fazer Pedido</button>
+                    </div>
+                </div>
+                 <!-- Product Card 5 -->
+                 <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cupcakes">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cupcakes</h3>
+                        <p>Pequenas porções de felicidade, lindamente decorados e com sabores surpreendentes.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Cupcakes">Fazer Pedido</button>
+                    </div>
+                </div>
+                 <!-- Product Card 6 -->
+                 <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kits Festa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kits Festa & Encomendas</h3>
+                        <p>Combinados perfeitos de bolos, doces e salgados para sua comemoração.</p>
+                        <button class="btn btn-primary btn-pedido btn-full" data-product="Kits Festa">Fazer Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Galeria de Momentos</h2>
+                <p>Um pouco das nossas criações que adoçam a vida</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in"><img src="assets/hero_cake.png" alt="Galeria"></div>
+                <div class="gallery-item fade-in"><img src="assets/product_sweets.png" alt="Galeria"></div>
+                <div class="gallery-item fade-in"><img src="assets/product_snacks.png" alt="Galeria"></div>
+                <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Galeria"></div>
+                <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Galeria"></div>
+                <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Galeria"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>O que dizem sobre nós</h2>
+                <p>A satisfação de quem prova nossas delícias</p>
+            </div>
+            <div class="testimonials-wrapper fade-in">
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"O bolo estava maravilhoso, super fofinho e o recheio no ponto certo! O atendimento foi impecável do início ao fim."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mariana Costa">
+                        <span>Mariana Costa</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Os salgados chegaram quentinhos e muito crocantes. A decoração do bolo de aniversário também estava perfeita, muito capricho."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rafael Silva">
+                        <span>Rafael Silva</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"A melhor confeitaria da cidade! Qualidade premium e muito sabor. Meus convidados amaram os doces gourmet da festa."</p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Juliana Mendes">
+                        <span>Juliana Mendes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas antes de encomendar</p>
+            </div>
+            <div class="accordion fade-in">
+                <div class="accordion-item">
+                    <button class="accordion-header">Como faço um pedido? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Você pode fazer seu pedido clicando em "Fazer Pedido" nos nossos produtos aqui no site, ou entrando em contato diretamente pelo nosso WhatsApp. É super rápido e prático!</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Como funciona o pagamento? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Trabalhamos com pagamentos via PIX. Ao finalizar seu pedido no site, você verá nossa chave PIX. Após o pagamento, basta enviar o comprovante no nosso WhatsApp para confirmarmos a encomenda.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Fazem entregas? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Sim, realizamos entregas para toda a região com o maior cuidado. A taxa de entrega varia de acordo com a sua localização. Consulte-nos no momento do pedido.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Trabalham com encomendas personalizadas? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Com certeza! Adoramos criar bolos e doces personalizados para combinar perfeitamente com o tema da sua festa e tornar o momento ainda mais único.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Quanto tempo antes devo encomendar? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Pedimos que as encomendas sejam feitas com pelo menos 3 a 5 dias de antecedência, dependendo do tamanho e complexidade do pedido, para garantirmos a melhor qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <span class="logo-text">Bolos & Salgados</span>
+                </div>
+                <p>Produzimos experiências inesquecíveis em formato de bolos, doces e salgados artesanais de alta qualidade.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#faq">Dúvidas Comuns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato e Localização</h3>
+                <ul class="contact-info">
+                    <li><i class="fab fa-whatsapp"></i> +55 82 99142-4574</li>
+                    <li><i class="fas fa-envelope"></i> contato@bolosesalgados.com.br</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Rua das Flores, 123 - Centro</li>
+                    <li><i class="fas fa-clock"></i> Seg a Sáb - 08:00 às 18:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bolos e Salgados. Todos os direitos reservados.</p>
+            <a href="#inicio" class="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5582991424574?text=Olá!%20Vim%20pelo%20site%20da%20Bolos%20e%20Salgados%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-product-img" src="" alt="Produto selecionado">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-product-name">Nome do Produto</h2>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="order-details">Detalhes do Pedido (Ex: Recheio, massa, tema):</label>
+                            <textarea id="order-details" rows="3" placeholder="Escreva como você gostaria..." required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="order-quantity">Quantidade/Peso:</label>
+                                <input type="number" id="order-quantity" min="1" value="1" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="order-date">Data do Evento:</label>
+                                <input type="date" id="order-date" required>
+                            </div>
+                        </div>
+
+                        <div class="pix-section">
+                            <h3>Pagamento via PIX</h3>
+                            <p class="pix-msg">Após realizar o pagamento envie o comprovante para nosso WhatsApp.</p>
+                            
+                            <div class="pix-qr-container">
+                                <!-- QR Code via API with the provided PIX key (using a dummy payload structure for visualization) -->
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=00020126580014br.gov.bcb.pix0136129541134215204000053039865802BR5915Bolos%20e%20Salgados6008MaceioAL62070503***6304" alt="QR Code PIX">
+                            </div>
+
+                            <div class="pix-copy-paste">
+                                <label>PIX Copia e Cola / Chave Celular:</label>
+                                <div class="copy-input-group">
+                                    <input type="text" id="pix-key" value="12954113421" readonly>
+                                    <button type="button" id="copy-pix-btn" class="btn-copy"><i class="fas fa-copy"></i> Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full"><i class="fab fa-whatsapp"></i> Enviar Pedido e Comprovante</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
